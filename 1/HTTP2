@@ -1,0 +1,7 @@
+netcat -C httpbin.org 80
+GET /page-1?one=1
+Host: httpbin.org
+
+HTTP/1.1 400 BAD_REQUEST
+Content-Length: 0
+Connection: Close

@@ -1,0 +1,22 @@
+razym@razym-desktop:~$ netcat -C httpbin.org 80
+POST / HTTP/1.1
+Host: httpbin.org
+
+HTTP/1.1 405 METHOD NOT ALLOWED
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+Allow: GET, OPTIONS, HEAD
+Content-Type: text/html
+Date: Fri, 17 May 2019 17:15:06 GMT
+Referrer-Policy: no-referrer-when-downgrade
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Content-Length: 178
+Connection: keep-alive
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
